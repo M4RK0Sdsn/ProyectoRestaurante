@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opciones del Menú del Día</title>
+    <link rel="stylesheet" href="Restaurante.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <h2>Opciones del menú del día:</h2>
+
+        <div class="selection-container">
+            <div class="select-group">
+                <label for="primer-plato">Primer plato:</label>
+                <select id="primer-plato">
+                    <option value="0">Elige primer plato</option>
+                    <option value="10">Ensalada - $10</option>
+                    <option value="12">Crema de Verduras - $12</option>
+                </select>
+                <div class="image-box">
+                    <img id="imagen-primer-plato" alt="Imagen primer plato" style="display:none;">
+                </div>
+            </div>
+
+            <div class="select-group">
+                <label for="segundo-plato">Segundo plato:</label>
+                <select id="segundo-plato">
+                    <option value="0">Elige segundo plato</option>
+                    <option value="15">Pollo - $15</option>
+                    <option value="18">Pescado - $18</option>
+                </select>
+                <div class="image-box">
+                    <img id="imagen-segundo-plato" alt="Imagen segundo plato" style="display:none;">
+                </div>
+            </div>
+
+            <div class="select-group">
+                <label for="postre">Postre:</label>
+                <select id="postre">
+                    <option value="0">Elige postre</option>
+                    <option value="5">Fruta - $5</option>
+                    <option value="7">Helado - $7</option>
+                </select>
+                <div class="image-box">
+                    <img id="imagen-postre" alt="Imagen postre" style="display:none;">
+                </div>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <input type="checkbox" id="descuento">
+            <label for="descuento">Consigue un 10% de descuento!!</label>
+            <button onclick="calcularTotal()">¡A comer!</button>
+            <p id="total">Total: $0</p>
+        </div>
+    </div>
+
+    <script src="Restaurante.js"></script>
+</body>
+</html>
